@@ -1,0 +1,131 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+body{
+    background-color: #4b5563;
+}
+#addPersonDiv{
+    #indemn{
+        color: white;
+        font-size: 20px;
+    }
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 10px auto;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    input{
+        border-radius: 4px;
+        padding: 5px;
+        outline: none;
+    }
+    #inpt{
+        width: 250px;
+        border: none;
+    }
+    #buttonsAdd{
+        display: flex;
+        flex-direction: row;
+        width: 350px;
+        gap: 15px;
+        align-items: center;
+        justify-content: center;
+        input{
+            width: 100px;
+        }
+    }
+}
+
+.table{
+    width: 90vw;
+    margin: 10px auto;
+    text-align: center;
+}
+#navBar{
+    font-size: 25px;
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    margin-left: 15px;
+    #btnNav:active{
+        transform: translateY(3px);
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+        &:hover{
+            color: dodgerblue;
+        }
+    }
+}
+
+#viewPerson{
+    margin: 15px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    #options{
+        display:flex;
+        flex-direction: row;
+        gap: 15px;
+        button{
+            border-radius: 4px;
+            padding-left: 15px;
+            padding-right: 15px;
+            border: none;
+            &:active{
+            transform: translateY(5px);
+        }
+        }
+        #editBtn{
+            background-color: dodgerblue;
+            &:hover{
+                background-color: rgb(22,116,212);
+                transition: 1s;
+                color: white;
+            }
+        }
+        #backBtn{
+            background-color: palevioletred;
+            &:hover{
+                background-color: rgb(228,63,117);
+                transition: 1s;
+                color: white;
+            }
+        }
+    }
+}
+.success-message {
+    color: white;
+    animation: hide 1s linear 1s 1 forwards;
+}
+@keyframes hide {
+    to {
+        opacity: 0;
+    }
+}
+#cancelBtn{
+    a{
+        text-decoration: none;
+        color:white;
+    }
+}
+
+#nameLink{
+    a{
+        text-decoration: none;
+    }
+}
